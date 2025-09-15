@@ -1,0 +1,86 @@
+{
+  "name": "SpotLite 7 - Reprodutor de Música",
+  "short_name": "SpotLite 7",
+  "description": "Reprodutor de música offline para Android com design inspirado no Spotify",
+  "start_url": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "background_color": "#191414",
+  "theme_color": "#1DB954",
+  "orientation": "portrait-primary",
+  "categories": ["music", "entertainment", "multimedia"],
+  "lang": "pt-BR",
+  "scope": "/",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "SpotLite em tela grande"
+    },
+    {
+      "src": "/screenshot-narrow.png",
+      "sizes": "375x812",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "SpotLite no celular"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Reproduzir Música",
+      "short_name": "Play",
+      "description": "Iniciar reprodução de música",
+      "url": "/?action=play",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Adicionar Pasta",
+      "short_name": "Pasta",
+      "description": "Escolher pasta de músicas",
+      "url": "/?action=folder",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "/",
+      "accept": {
+        "audio/*": [".mp3", ".wav", ".ogg", ".flac", ".m4a", ".aac", ".wma"]
+      }
+    }
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "web+music",
+      "url": "/?track=%s"
+    }
+  ]
+}
+
